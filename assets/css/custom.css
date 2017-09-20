@@ -1,0 +1,226 @@
+/* Progressbar Start*/
+
+/* Progress Bar */
+.progress {
+  position: fixed;
+  height: 2px;
+  display: block;
+  width: 100%;
+  background-color: #4285f4;
+  border-radius: 2px;
+  background-clip: padding-box;
+/*   margin: 0.1rem 0 1rem 0; */
+margin:0;
+  overflow: hidden; }
+  .progress .determinate {
+    position: absolute;
+    background-color: inherit;
+    top: 0;
+    bottom: 0;
+    background-color: #26a69a;
+    transition: width .3s linear; }
+  .progress .indeterminate {
+    background-color: white; }
+    .progress .indeterminate:before {
+      content: '';
+      position: absolute;
+      background-color: inherit;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      will-change: left, right;
+      -webkit-animation: indeterminate 2.1s cubic-bezier(0.65, 0.815, 0.735, 0.395) infinite;
+              animation: indeterminate 2.1s cubic-bezier(0.65, 0.815, 0.735, 0.395) infinite; }
+    .progress .indeterminate:after {
+      content: '';
+      position: absolute;
+      background-color: inherit;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      will-change: left, right;
+      -webkit-animation: indeterminate-short 2.1s cubic-bezier(0.165, 0.84, 0.44, 1) infinite;
+              animation: indeterminate-short 2.1s cubic-bezier(0.165, 0.84, 0.44, 1) infinite;
+      -webkit-animation-delay: 1.15s;
+              animation-delay: 1.15s; }
+
+@-webkit-keyframes indeterminate {
+  0% {
+    left: -35%;
+    right: 100%; }
+  60% {
+    left: 100%;
+    right: -90%; }
+  100% {
+    left: 100%;
+    right: -90%; } }
+@keyframes indeterminate {
+  0% {
+    left: -35%;
+    right: 100%; }
+  60% {
+    left: 100%;
+    right: -90%; }
+  100% {
+    left: 100%;
+    right: -90%; } }
+@-webkit-keyframes indeterminate-short {
+  0% {
+    left: -200%;
+    right: 100%; }
+  60% {
+    left: 107%;
+    right: -8%; }
+  100% {
+    left: 107%;
+    right: -8%; } }
+@keyframes indeterminate-short {
+  0% {
+    left: -200%;
+    right: 100%; }
+  60% {
+    left: 107%;
+    right: -8%; }
+  100% {
+    left: 107%;
+    right: -8%; } }
+/* Progress Bar End */
+
+.breadcrumb>li+li:before {
+	color: #CCCCCC;
+	content: "/ ";
+	padding: 0 5px;
+}
+
+.hidden {
+	display: none;
+}
+
+.pgContainer {
+	/* 	border: 1px; */
+	/* 	border-color: black; */
+	/* 	border-style: solid; */
+	/* 	border-radius: 4px 4px 4px 4px; */
+	
+}
+
+.pgHeader {
+	background-color: #2196f3;
+	padding: 2%;
+	color: white;
+	font-size: 20px;
+}
+
+.pgInsertTab {
+	padding: 2%;
+	color: white;
+	font-size: 20px;
+}
+
+}
+.pgHeader-title {
+	font-weight: bold;
+	text-transform: uppercase;
+	font-family: inherit;
+	font-weight: 400;
+	line-height: 1.1;
+}
+
+.pgHeader-content {
+	font-family: inherit;
+	font-size: 18px;
+	font-weight: 300;
+	line-height: 1.1;
+}
+
+.sideNav {
+	z-index: 510;
+	position: fixed;
+	left: 0;
+	top: 0;
+	bottom: 0;
+	height: 100%;
+	background: white;
+	display: none;
+	padding: 0;
+	width: 70%;
+	overflow: scroll;
+}
+
+.sideNavTitle {
+	padding: 1%;
+	font-size: 30px;
+	font-weight: 10;
+	font-size: 30px;
+}
+
+.sideNavCloseBtn {
+	padding: 1%;
+	font-size: 30px;
+	font-weight: 10;
+}
+
+.mask {
+	z-index: 500;
+	position: fixed;
+	opacity: 0.5;
+	display: none;
+	/* removes the element completely from the document, it doesn't take up any space. */
+	/* visibility: hidden; -- hides the element, but it still takes up space in the layout. */
+	background: transparent;
+	background-color: #ccc;
+	height: 100%;
+	width: 100%;
+	top: 0px;
+	left: 0px;
+}
+
+.newline {
+	padding-bottom: 3%;
+}
+
+.topNav {background-grey;
+	display: none;
+	height: 50%;
+	padding: 2%;
+}
+
+#insertTab {
+	color: black;
+}
+
+.list-group-item {
+/* 	height: 150px; */
+}
+
+.list-group-item:last-child {
+  margin-bottom: 0;
+  border-bottom-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+}
+.list-group-item:first-child {
+  border-top-right-radius: 0px;
+  border-top-left-radius: 0px;
+}
+body {
+	background-color: white;
+}
+
+#tableView {
+	display: none;
+}
+
+.moreInfo {
+	position: fixed;
+	background-color: #f1f1f1;
+	z-index: 400;
+	bottom: 0;
+	width: 100%;
+	height: 60px;
+	background-color: #f5f5f5;
+}
+
+.btn-blue:hover{
+	background-color: #4285f4;
+	color:white;
+}

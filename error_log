@@ -1,0 +1,2 @@
+[25-Dec-2015 06:38:39 UTC] PHP Fatal error:  Out of memory (allocated 262144) (tried to allocate 12288 bytes) in /home/baseapps/public_html/erp/system/core/CodeIgniter.php on line 111
+[25-Dec-2015 06:38:39 UTC] PHP Fatal error:  Out of memory (allocated 262144) (tried to allocate 12288 bytes) in /home/baseapps/public_html/erp/system/core/CodeIgniter.php on line 111
